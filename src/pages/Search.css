@@ -1,0 +1,42 @@
+.search-page {
+  padding: 120px 50px 50px;
+  min-height: 100vh;
+}
+
+.search-page h1 {
+  margin-bottom: 40px;
+  font-size: 2rem;
+}
+
+.search-results {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 30px;
+}
+
+.search-item {
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.search-item:hover {
+  transform: scale(1.05);
+}
+
+.search-item img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.search-item p {
+  text-align: center;
+  font-size: 1rem;
+}
+
+.no-results {
+  font-size: 1.5rem;
+  color: #888;
+  text-align: center;
+  margin-top: 50px;
+}
